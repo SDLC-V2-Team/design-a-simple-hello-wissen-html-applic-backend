@@ -1,18 +1,22 @@
-# Hello Wissen – Static HTML App
+# Hello Wissen
 
-## Overview
-This is a minimal static HTML application that displays the message **"hello wissen"**.
+A simple static HTML application displaying a friendly message.
 
-## How to Run
-Simply open the `index.html` file in any modern web browser. No server or build step required.
+## Quick Start
 
-## Project Structure
+### Local
+Open `index.html` in any modern web browser.
+
+### Docker
+```bash
+docker build -t hello-wissen .
+docker run -d -p 8080:80 hello-wissen
 ```
-├── index.html    # Main HTML page
-├── README.md     # This file
-└── .gitignore    # Git ignore rules
-```
+Then visit http://localhost:8080.
 
-## Compliance
-- **ADR-001**: Delivered as a single static HTML file with zero external dependencies.
-- Traces to PRD requirement: "display message 'hello wissen' in HTML".
+## Tech Stack
+- Plain HTML5, CSS, JavaScript
+- Served via Nginx (Docker) or any static file server
+
+## ADR
+See [ADR-001](adr/ADR-001.md) for architecture decisions. (Not yet created)

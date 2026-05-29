@@ -3,11 +3,10 @@
 Thumbs.db
 
 # Editor files
-.vscode/
-.idea/
 *.swp
 *.swo
+.vscode/
+.idea/
 
-# Generic
-*.log
-.env
+# Docker
+.docker/

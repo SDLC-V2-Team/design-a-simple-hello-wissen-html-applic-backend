@@ -1,17 +1,5 @@
+# Exclude unnecessary files from Docker build context
 .git
 .gitignore
-**/__pycache__/
-*.pyc
-.pytest_cache/
-.venv/
-venv/
-.env
-.env.local
-.idea/
-.vscode/
-node_modules/
-dist/
-build/
-target/
-*.log
-.DS_Store
+README.md
+*.md
